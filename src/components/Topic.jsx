@@ -1,5 +1,7 @@
-import { Button, Card } from 'flowbite-react';
+import {  Card } from 'flowbite-react';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Topic = ({topic}) => {
     const {id,name,logo,total} = topic ;
@@ -13,10 +15,11 @@ const Topic = ({topic}) => {
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {name}
                 </h5>
-                <p>Total number of Quiz: {total}</p>
-                <Button className="w-1/2" color="purple">
-                Start Practice
-            </Button>
+                <p className='font-medium'>Total number of Quiz: {total}</p>
+                <button className="w-full bg-indigo-400 hover:bg-indigo-500 font-semibold  py-2 rounded-lg mx-auto flex gap-2 justify-center items-center" >
+                    <span>Start Practice</span>
+                 <FontAwesomeIcon icon={faArrowRight} />
+            </button>
             </Card>
         </div>
     );
