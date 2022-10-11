@@ -6,7 +6,6 @@ import Topic from "./Topic";
 const Topics = () => {
   const topics = useContext(TopicsContext);
 
-  console.log(topics);
   return (
     <div className="bg-zinc-200 lg:h-[100vh] pb-8">
       <Slider></Slider>

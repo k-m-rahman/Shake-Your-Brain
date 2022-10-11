@@ -11,7 +11,7 @@ const Quiz = () => {
   return (
     <div className="bg-teal-50 lg:h-[100vh] pb-8">
       <div className="w-4/5 mx-auto p-2">
-        <h2 className="text-3xl text-cyan-700 font-semibold">Quiz of {name}</h2>
+        <h2 className="text-3xl text-cyan-700 font-semibold underline">Quiz of {name}</h2>
 
         <div className="flex flex-col gap-3 mt-8">
           {

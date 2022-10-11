@@ -11,6 +11,7 @@ const Topic = ({topic}) => {
 
     const handleNavigate = () => {
         navigate(`/topic/${id}`);
+        window.scrollTo(0, 0);
     }
     return (
         <div className="max-w-sm">
