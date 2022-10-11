@@ -1,34 +1,68 @@
-# Shake Your Brain
+# **Shake Your Brain**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **_This project was built with -_**
 
-## Available Scripts
+- **React**
+- **React Router**
+- **Tailwind CSS**
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## **Netlify Live Site Link :**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Shake Your Brain](https://shake-your-brain-k-m-rahman.netlify.app/)
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **API**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All Quiz Topics -> https://openapi.programming-hero.com/api/quiz
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Quiz of Each Topic -> https://openapi.programming-hero.com/api/quiz/${id}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Example -> https://openapi.programming-hero.com/api/quiz/1
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Description**
+
+---
+
+- a simple educational website to help students test their knowledge about front end development
+- used react router dom v6.4 to make this single page application
+- to make the website fully responsive tailwind css was used more specifically flowbite component library
+- the site is moderately interactive and have some cool toasts and alert
+- in statistic route line chart and bar chart of total number of quiz in each topic have been shown using rechart
+
+<br>
+
+## **Resource & Credits:**
+
+---
+
+1.Tailwind Component -> [Flowbite-react](https://flowbite-react.com/)
+<br>
+2.Icon -> [FontAwesome](https://fontawesome.com/)
+<br>
+3.Animation -> [LottieFiles](https://lottiefiles.com/)
+<br>
+4.Chart -> [Rechart](https://recharts.org/en-US/api)
+
+<br>
+
+# **To Run The Project**
+
+- ### **Clone the project**
+
+---
+
+- ### **npm install**
+
+---
+
+- ### **npm start**
