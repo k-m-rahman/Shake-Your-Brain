@@ -23,6 +23,7 @@ const Barchart = ({ topics }) => {
           dataKey="total"
           fill="#82ca9d"
           name="Total Number Of Quiz In Each Topic"
+          barSize={50}
         />
       </BarChart>
     </ResponsiveContainer>

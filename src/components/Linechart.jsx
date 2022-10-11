@@ -25,7 +25,7 @@ const Linechart = ({ topics }) => {
           type="monotone"
           dataKey="total"
           stroke="#8884d8"
-          strokeWidth={3}
+          strokeWidth={4}
           name="Total Number Of Quiz In Each Topic"
         />
       </LineChart>
