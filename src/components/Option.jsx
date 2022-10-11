@@ -22,12 +22,10 @@ const Option = ({option,handleCorrectAnswer , question}) => {
 
     }
 
- 
-
+    // for handling hover effect on options
     const handleMouseEnter = () => {
       setIsHovering(true);
     };
-  
     const handleMouseLeave = () => {
       setIsHovering(false);
     };

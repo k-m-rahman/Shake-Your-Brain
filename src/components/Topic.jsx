@@ -7,18 +7,16 @@ import { useNavigate } from 'react-router-dom';
 const Topic = ({topic}) => {
     const {id,name,logo,total} = topic ;
 
+   // creating dynamic route for each topic's quiz  
     const navigate = useNavigate() ;
-
     const handleNavigate = () => {
         navigate(`/topic/${id}`);
         window.scrollTo(0, 0);
     }
+
     return (
         <div className="max-w-sm">
-            <Card
-                // imgAlt={name}
-                // imgSrc={logo}
-            >   
+            <Card>   
                 <img src={logo} className="rounded-lg shadow-md bg-slate-200" alt="" />
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {name}
