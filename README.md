@@ -8,17 +8,11 @@
 
 <br>
 
-## **Netlify Live Site Link :**
-
----
-
-[Shake Your Brain](https://shake-your-brain-k-m-rahman.netlify.app/)
+## **Netlify Live Site Link :** [Shake Your Brain](https://shake-your-brain-k-m-rahman.netlify.app/)
 
 <br>
 
 ## **API**
-
----
 
 All Quiz Topics -> https://openapi.programming-hero.com/api/quiz
 
@@ -31,8 +25,6 @@ Example -> https://openapi.programming-hero.com/api/quiz/1
 
 ## **Description**
 
----
-
 - a simple educational website to help students test their knowledge about front end development
 - used react router dom v6.4 to make this single page application
 - to make the website fully responsive tailwind css was used more specifically flowbite component library
@@ -42,8 +34,6 @@ Example -> https://openapi.programming-hero.com/api/quiz/1
 <br>
 
 ## **Resource & Credits:**
-
----
 
 1.Tailwind Component -> [Flowbite-react](https://flowbite-react.com/)
 <br>
@@ -59,10 +49,6 @@ Example -> https://openapi.programming-hero.com/api/quiz/1
 
 - ### **Clone the project**
 
----
-
 - ### **npm install**
-
----
 
 - ### **npm start**
