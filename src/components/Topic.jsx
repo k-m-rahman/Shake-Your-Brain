@@ -2,9 +2,16 @@ import {  Card } from 'flowbite-react';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom';
 
 const Topic = ({topic}) => {
     const {id,name,logo,total} = topic ;
+
+    const navigate = useNavigate() ;
+
+    const handleNavigate = () => {
+        navigate(`/topic/${id}`);
+    }
     return (
         <div className="max-w-sm">
             <Card
@@ -16,7 +23,7 @@ const Topic = ({topic}) => {
                 {name}
                 </h5>
                 <p className='font-medium'>Total number of Quiz: {total}</p>
-                <button className="w-full bg-indigo-400 hover:bg-indigo-500 font-semibold  py-2 rounded-lg mx-auto flex gap-2 justify-center items-center" >
+                <button onClick={handleNavigate} className="w-full bg-indigo-400 hover:bg-indigo-500 font-semibold  py-2 rounded-lg mx-auto flex gap-2 justify-center items-center" >
                     <span>Start Practice</span>
                  <FontAwesomeIcon icon={faArrowRight} />
             </button>
