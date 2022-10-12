@@ -3,8 +3,8 @@ import { Card } from "flowbite-react";
 import { Link } from "react-router-dom";
 
 const Blog = ({ blog }) => {
-  const { _id, name, description, picture } = blog;
-  console.log(blog);
+  const { name, description, picture } = blog;
+
   return (
     <div>
       <Card imgSrc={picture}>

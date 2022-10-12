@@ -1,27 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Question from "./Question";
 
 const Quiz = () => {
   const data = useLoaderData();
   const quizData = data.data;
-
   const { name, questions, total } = quizData;
+
+  // for total correct answer calculation
+  const [correctAns, setCorrectAns] = useState(0);
+
+  const shadowStyle = {
+    boxShadow: "inset 0 0 6px  gray",
+  };
+
   return (
     <div className="bg-teal-50  pb-8">
-      <div className=" md:w-4/5 mx-2 md:mx-auto p-2">
+      <div className="  mx-2 lg:mx-5 md:mx-auto p-2">
         <h2 className="text-3xl text-cyan-700 font-semibold underline">
           Quiz of {name}
         </h2>
 
-        <div className="flex flex-col gap-3 mt-8">
-          {questions.map((question, idx) => (
-            <Question
-              key={question.id}
-              idx={idx}
-              questionItem={question}
-            ></Question>
-          ))}
+        <div className="grid gap-4 grid-cols-1 lg:grid-cols-12 ">
+          <div className="flex flex-col gap-3 mt-8 lg:col-span-9 ">
+            {questions.map((question, idx) => (
+              <Question
+                key={question.id}
+                idx={idx}
+                questionItem={question}
+                setCorrectAns={setCorrectAns}
+              ></Question>
+            ))}
+          </div>
+
+          <div
+            className="bg-zinc-100 p-3 lg:col-span-3 mt-8 rounded-lg mb-4"
+            style={shadowStyle}
+          >
+            <div className="sticky top-2">
+              <h1 className="text-xl font-semibold mb-2 underline">
+                Mark Sheet
+              </h1>
+              <h3 className="text-lg font-medium">Total Questions: {total}</h3>
+              <h3 className="text-lg font-medium">
+                Correct Answers: {correctAns}
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
