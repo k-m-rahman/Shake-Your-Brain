@@ -6,11 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import swal from "sweetalert";
 
-const Question = ({ questionItem, idx, setCorrectAns }) => {
+const Question = ({ questionItem, idx, setCorrectAns, setWrongAns }) => {
   const { correctAnswer, options, question } = questionItem;
 
   // correct answer can be clicked only once
   const [correctAnsClicked, setCorrectAnsClicked] = useState(false);
+
+  // wrong answer click count can only be one whatever the option is
+  const [wrongAnsClicked, setWrongAnsClicked] = useState(false);
 
   // removing the html tags and spaces
   let questionText = question.replace(/(<([^>]+)>)/gi, "");
@@ -22,15 +25,29 @@ const Question = ({ questionItem, idx, setCorrectAns }) => {
       toast.success("Correct Answer!", { autoClose: 800 });
 
       if (correctAnsClicked === false) {
+        // correct ans will be counted only once for each question
         setCorrectAnsClicked(true);
         setCorrectAns((prev) => prev + 1); // total correct answer calculation
+      }
+
+      // if anybody chooses correct option after the wrong ans the wrong ans count will decrease
+      if (wrongAnsClicked === true) {
+        setWrongAnsClicked(false);
+        setWrongAns((prev) => prev - 1);
       }
     } else {
       toast.error(`Wrong Answer, Please Try Again.`, { autoClose: 800 });
 
+      // if anybody chooses wrong ans after clicking the right ans the correct ans count will decrease
       if (correctAnsClicked === true) {
         setCorrectAnsClicked(false);
         setCorrectAns((prev) => prev - 1);
+      }
+
+      // wrong ans will be counted only once for each question
+      if (wrongAnsClicked === false) {
+        setWrongAnsClicked(true);
+        setWrongAns((prev) => prev + 1);
       }
     }
   };

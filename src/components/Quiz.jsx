@@ -9,6 +9,7 @@ const Quiz = () => {
 
   // for total correct answer calculation
   const [correctAns, setCorrectAns] = useState(0);
+  const [wrongAns, setWrongAns] = useState(0);
 
   const shadowStyle = {
     boxShadow: "inset 0 0 6px  gray",
@@ -29,6 +30,7 @@ const Quiz = () => {
                 idx={idx}
                 questionItem={question}
                 setCorrectAns={setCorrectAns}
+                setWrongAns={setWrongAns}
               ></Question>
             ))}
           </div>
@@ -41,10 +43,28 @@ const Quiz = () => {
               <h1 className="text-xl font-semibold mb-2 underline">
                 Mark Sheet
               </h1>
-              <h3 className="text-lg font-medium">Total Questions: {total}</h3>
-              <h3 className="text-lg font-medium">
-                Correct Answers: {correctAns}
-              </h3>
+              <div className="text-lg font-medium flex flex-col gap-2 mt-9  w-11/12 shadow-md border border-gray-300 rounded-lg p-4 mx-auto text-right">
+                <h3 className="grid grid-cols-6">
+                  {" "}
+                  <span className="col-span-5">Total Questions :</span>{" "}
+                  <span className="ml-3">{total}</span>{" "}
+                </h3>
+                <h3 className="grid grid-cols-6">
+                  {" "}
+                  <span className="col-span-5">Correct Answers :</span>{" "}
+                  <span className="ml-3">{correctAns}</span>{" "}
+                </h3>
+                <h3 className="grid grid-cols-6">
+                  {" "}
+                  <span className="col-span-5">Wrong Answers :</span>{" "}
+                  <span className="ml-3">{wrongAns}</span>{" "}
+                </h3>
+                <h3 className="grid grid-cols-6">
+                  {" "}
+                  <span className="col-span-5">Remaining :</span>{" "}
+                  <span className="ml-3">{total - correctAns - wrongAns}</span>{" "}
+                </h3>
+              </div>
             </div>
           </div>
         </div>
