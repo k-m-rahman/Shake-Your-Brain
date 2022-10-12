@@ -3,7 +3,7 @@
       "_id": "1",
       "index": 0,
       "picture": "https://miro.medium.com/max/1400/0*_YtF4Q_aq26KAwxg.png",
-      "description": "React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.",
+      "description": "React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.The biggest advantage is every time the page does not refresh when navigating among different routes.",
       "name" : "What Is The Purpose of React Router?"
     },
     {
@@ -11,7 +11,7 @@
       "index": 1,
       "picture": "https://blog.hashinteractive.com/wp-content/uploads/2020/05/react-context-api.jpg",
       "name": "How Does Context API Works?",
-      "description": ""
+      "description": "Context provides a way to share values between components without having to explicitly pass a prop through every level of the tree. To avoid prop drilling, we cas use context api. There are four steps to using React context. First, create context using the createContext method. Then take the created context and wrap the context provider around your component tree. Thirdly, any value can be put on the context provider using the value prop. Lastly, the value can be read within any component by using the context consumer."
    
     },
     {
@@ -19,7 +19,7 @@
       "index": 2,
       "picture": "https://res.cloudinary.com/practicaldev/image/fetch/s--5u-MHaMy--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/l7ci1s4hjn2yrmovjh0s.png",
       "name": "useRef Hook",
-      "description": ""
+      "description": "The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. The useRef returns a mutable ref object. This object has a property called .current. The value is persisted in the refContainer.current property. These values are accessed from the current property of the returned object. The .current property could be initialized to the passed argument initialValue e.g. useRef(initialValue). The object can persist a value for a full lifetime of the component. "
     }
     
   ]

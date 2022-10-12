@@ -23,7 +23,7 @@ const Header = () => {
             className={({ isActive }) =>
               !isActive
                 ? "bg-teal-200 p-2 rounded-lg hover:bg-teal-300 sm:hover:scale-110 mb-1"
-                : "bg-teal-400 p-2 rounded-lg hover:scale-110 mb-1"
+                : "bg-teal-400 p-2 rounded-lg sm:hover:scale-110 mb-1"
             }
             to="topics"
           >
@@ -33,7 +33,7 @@ const Header = () => {
             className={({ isActive }) =>
               !isActive
                 ? "bg-teal-200 p-2 rounded-lg hover:bg-teal-300 sm:hover:scale-110 mb-1"
-                : "bg-teal-400 p-2 rounded-lg hover:scale-110 mb-1"
+                : "bg-teal-400 p-2 rounded-lg sm:hover:scale-110 mb-1"
             }
             to="/statistics"
           >
@@ -43,7 +43,7 @@ const Header = () => {
             className={({ isActive }) =>
               !isActive
                 ? "bg-teal-200 p-2 rounded-lg hover:bg-teal-300 sm:hover:scale-110 mb-1"
-                : "bg-teal-400 p-2 rounded-lg hover:scale-110 mb-1"
+                : "bg-teal-400 p-2 rounded-lg sm:hover:scale-110 mb-1"
             }
             to="/blogs"
           >

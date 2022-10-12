@@ -34,7 +34,9 @@ export const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs></Blogs>,
-        loader: () => fetch("blogs.json"),
+        loader: () =>
+          fetch("https://mocki.io/v1/66962ac5-545d-4484-a576-97b92a7233c7"),
+        // fetch("blogs.json"),
       },
     ],
   },
