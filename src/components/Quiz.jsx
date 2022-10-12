@@ -36,10 +36,10 @@ const Quiz = () => {
           </div>
 
           <div
-            className="bg-zinc-100 p-3 lg:col-span-3 mt-8 rounded-lg mb-4"
+            className="bg-zinc-100 p-3 md:w-1/2 lg:w-auto md:mx-auto lg:mx-0  lg:col-span-3 mt-8 rounded-lg mb-4"
             style={shadowStyle}
           >
-            <div className="sticky top-2">
+            <div className="sticky top-20">
               <h1 className="text-xl font-semibold mb-2 underline">
                 Mark Sheet
               </h1>
