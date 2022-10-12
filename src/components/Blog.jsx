@@ -1,11 +1,22 @@
-import React from 'react';
+import React from "react";
+import { Card } from "flowbite-react";
+import { Link } from "react-router-dom";
 
-const Blog = () => {
-    return (
-        <div>
-            This is blog page .
-        </div>
-    );
+const Blog = ({ blog }) => {
+  const { _id, name, description, picture } = blog;
+  console.log(blog);
+  return (
+    <div>
+      <Card imgSrc={picture}>
+        <h5 className="text-2xl  font-bold tracking-tight text-gray-900 dark:text-white">
+          {name}
+        </h5>
+        <p className="font-normal text-justify text-gray-700 dark:text-gray-400">
+          {description}
+        </p>
+      </Card>
+    </div>
+  );
 };
 
 export default Blog;

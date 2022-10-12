@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <div className="shadow-md ">
+    <div className="shadow-md">
       <Navbar fluid={true} rounded={true}>
         <NavLink className={"flex"} to="/">
           <img
@@ -45,7 +45,7 @@ const Header = () => {
                 ? "bg-teal-200 p-2 rounded-lg hover:bg-teal-300 sm:hover:scale-110 mb-1"
                 : "bg-teal-400 p-2 rounded-lg hover:scale-110 mb-1"
             }
-            to="/blog"
+            to="/blogs"
           >
             Blog
           </NavLink>
