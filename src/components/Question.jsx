@@ -20,7 +20,7 @@ const Question = ({ questionItem, idx, setCorrectAns, setWrongAns }) => {
   let questionText2 = questionText.replace(/\&nbsp;/g, " ");
 
   // throwing a toast on answer clicking
-  const handleCorrectAnswer = (option, e) => {
+  const handleCorrectAnswer = (option) => {
     if (option === correctAnswer) {
       toast.success("Correct Answer!", { autoClose: 800 });
 
@@ -85,6 +85,7 @@ const Question = ({ questionItem, idx, setCorrectAns, setWrongAns }) => {
             option={option}
             handleCorrectAnswer={handleCorrectAnswer}
             question={question}
+            correctAnswer={correctAnswer}
           ></Option>
         ))}
       </div>
